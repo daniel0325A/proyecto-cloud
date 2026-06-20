@@ -11,7 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+<!-- VISOR DE IMAGENES -->
 
+<div id="imageModal" class="modal">
+
+    <span class="close">&times;</span>
+
+    <img class="modal-content" id="modalImg">
+
+</div>
 <body>
 
     <!-- NAVBAR -->
@@ -31,6 +39,7 @@
                 <li><a href="#kubernetes">Kubernetes</a></li>
                 <li><a href="#galeria">Galería</a></li>
                 <li><a href="#conclusiones">Conclusiones</a></li>
+                <li><a href="https://canva.link/r9285n68oen4cjd" target="_blank">Presentacion en CANVA</a></li>
             </ul>
         </nav>
     </header>
@@ -105,29 +114,54 @@
 
         <div class="cards">
 
-            <div class="card">
-                <h3>Daniel Barona Arango</h3>
-                <p>Integrante del proyecto.</p>
-            </div>
+    <div class="card">
+        <img src="img/daniel.jpeg" alt="Daniel Barona" class="team-photo">
+        <h3>Daniel Barona Arango</h3>
+        <p>Integrante del proyecto.</p>
+    </div>
 
-            <div class="card">
-                <h3>Felipe Villán Jiménez</h3>
-                <p>Integrante del proyecto.</p>
-            </div>
+    <div class="card">
+        <img src="img/brayan.jpeg" alt="Felipe Villán" class="team-photo">
+        <h3>Felipe Villán Jiménez</h3>
+        <p>Integrante del proyecto.</p>
+    </div>
 
-            <div class="card">
-                <h3>Leandro Banguero</h3>
-                <p>Integrante del proyecto.</p>
-            </div>
+    <div class="card">
+        <img src="img/jean.jpeg" alt="Leandro Banguero" class="team-photo">
+        <h3>Leandro Banguero</h3>
+        <p>Integrante del proyecto.</p>
+    </div>
 
-            <div class="card">
-                <h3>Jean Paul Díaz Suárez</h3>
-                <p>Integrante del proyecto.</p>
-            </div>
+    <div class="card">
+        <img src="img/leandro.jpeg" alt="Jean Paul Díaz" class="team-photo">
+        <h3>Jean Paul Díaz Suárez</h3>
+        <p>Integrante del proyecto.</p>
+    </div>
 
-        </div>
+</div>
 
     </section>
+   <section id="video" class="section">
+
+    <h2 class="section-title">
+        Video de Sustentación
+    </h2>
+
+    <div class="video-container">
+
+        <iframe
+            src="https://www.youtube.com/embed/3d58Nv4zeVk"
+            title="Video del Proyecto"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+    </div>
+
+</section>
 
     <!-- ARQUITECTURA -->
 
@@ -303,11 +337,23 @@
 
         </div>
 
-        <div class="placeholder">
-            Espacio reservado para evidencias Docker
-        </div>
+        <h3>Evidencias de Docker Engine</h3>
 
-    </section>
+<div class="gallery">
+
+    <div class="gallery-item"><img src="img/d1.jpeg" alt="Docker 1"></div>
+    <div class="gallery-item"><img src="img/d2.jpeg" alt="Docker 2"></div>
+    <div class="gallery-item"><img src="img/d3.jpeg" alt="Docker 3"></div>
+    <div class="gallery-item"><img src="img/d4.jpeg" alt="Docker 4"></div>
+    <div class="gallery-item"><img src="img/d5.jpeg" alt="Docker 5"></div>
+    <div class="gallery-item"><img src="img/d6.jpeg" alt="Docker 6"></div>
+    <div class="gallery-item"><img src="img/d7.jpeg" alt="Docker 7"></div>
+    <div class="gallery-item"><img src="img/d8.jpeg" alt="Docker 8"></div>
+    <div class="gallery-item"><img src="img/d9.jpeg" alt="Docker 9"></div>
+    <div class="gallery-item"><img src="img/d10.jpeg" alt="Docker 10"></div>
+    <div class="gallery-item"><img src="img/d11.jpeg" alt="Docker 11"></div>
+
+</div>
 
     <!-- KUBERNETES -->
 
@@ -341,11 +387,21 @@
 
         </div>
 
-        <div class="placeholder">
-            Espacio reservado para evidencias Kubernetes
-        </div>
+        <h3>Evidencias de Kubernetes</h3>
 
-    </section>
+<div class="gallery">
+
+    <div class="gallery-item"><img src="img/k1.jpeg" alt="Kubernetes 1"></div>
+    <div class="gallery-item"><img src="img/k2.jpeg" alt="Kubernetes 2"></div>
+    <div class="gallery-item"><img src="img/k3.jpeg" alt="Kubernetes 3"></div>
+    <div class="gallery-item"><img src="img/k4.jpeg" alt="Kubernetes 4"></div>
+    <div class="gallery-item"><img src="img/k5.jpeg" alt="Kubernetes 5"></div>
+    <div class="gallery-item"><img src="img/k6.jpeg" alt="Kubernetes 6"></div>
+    <div class="gallery-item"><img src="img/k7.jpeg" alt="Kubernetes 7"></div>
+    <div class="gallery-item"><img src="img/k8.jpeg" alt="Kubernetes 8"></div>
+    <div class="gallery-item"><img src="img/k9.jpeg" alt="Kubernetes 9"></div>
+
+</div>
 
     <!-- GALERIA -->
 
@@ -357,16 +413,37 @@
 
         <div class="gallery">
 
-            <div class="gallery-item">VM 1</div>
-            <div class="gallery-item">VM 2</div>
-            <div class="gallery-item">SSH</div>
-            <div class="gallery-item">Docker</div>
-            <div class="gallery-item">Frontend</div>
-            <div class="gallery-item">Kubernetes</div>
+    <div class="gallery-card">
+        <img src="img/mapa.jpeg" alt="Diagrama de arquitectura">
+        <h3>Diagrama de arquitectura</h3>
+    </div>
 
-        </div>
+    <div class="gallery-card">
+        <img src="img/alma1.jpeg" alt="AlmaLinux">
+        <h3>AlmaLinux 9.4</h3>
+    </div>
 
-    </section>
+    <div class="gallery-card">
+        <img src="img/ssh1.jpeg" alt="SSH">
+        <h3>Conexión SSH</h3>
+    </div>
+
+    <div class="gallery-card">
+        <img src="img/d1.jpeg" alt="Docker">
+        <h3>Docker Engine</h3>
+    </div>
+
+    <div class="gallery-card">
+        <img src="img/d11.jpeg" alt="Frontend">
+        <h3>Frontend Nginx</h3>
+    </div>
+
+    <div class="gallery-card">
+        <img src="img/k1.jpeg" alt="Kubernetes">
+        <h3>Kubernetes</h3>
+    </div>
+
+</div>
 
     <!-- CONCLUSIONES -->
 
@@ -378,16 +455,17 @@
 
         <div class="content-box">
 
-            <p>
-                En esta sección se presentarán los aprendizajes obtenidos
-                durante el desarrollo del proyecto.
-            </p>
+<p>
+Durante el desarrollo de este proyecto aprendimos a crear y publicar un sitio web en un entorno real, además de trabajar con máquinas virtuales, contenedores Docker y herramientas de orquestación. Estos conocimientos son importantes porque representan tecnologías ampliamente utilizadas en entornos empresariales y en la administración de servidores.
+</p>
 
-            <p>
-                También se describirán las dificultades encontradas y las
-                soluciones implementadas por el equipo.
-            </p>
+<p>
+Una de las principales dificultades encontradas fue la parte relacionada con Kubernetes, ya que es una herramienta con muchos conceptos nuevos y en algunos momentos resultó complejo comprender su funcionamiento y los escenarios donde puede aplicarse. La falta de una explicación más detallada al inicio hizo que el proceso de aprendizaje fuera más desafiante, aunque la práctica permitió comprender mejor su utilidad dentro de los entornos cloud.
+</p>
 
+<p>
+Como recomendación, consideramos que el proyecto podría desarrollarse de forma paralela al avance de los temas vistos en el curso. De esta manera, cada tecnología estudiada, como máquinas virtuales, Docker y Kubernetes, podría implementarse inmediatamente dentro del proyecto, facilitando la comprensión de los conceptos y acercando más el aprendizaje a situaciones reales que pueden encontrarse en el ámbito laboral.
+</p>
         </div>
 
     </section>
